@@ -4,9 +4,9 @@ import { IFilters } from '../../interfaces'
 export const useFilters = (initialFilters: IFilters) => {
 	const [filter, setFilter] = useState<IFilters>(initialFilters)
 	const changeFilters = (key: string, value: string | number | null) => {
-		setFilter((prev) => {
+		setFilter((filter) => {
 			return {
-				...prev,
+				...filter,
 				[key]: value,
 			}
 		})

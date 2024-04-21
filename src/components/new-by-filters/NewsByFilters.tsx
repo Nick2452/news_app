@@ -26,6 +26,7 @@ export function NewsByFilters() {
 			changeFilters('page_number', filter.page_number + 1)
 		}
 	}
+
 	const handlePrevPage = () => {
 		if (filter.page_number > 1) {
 			changeFilters('page_number', filter.page_number - 1)
