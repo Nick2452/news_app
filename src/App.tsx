@@ -4,6 +4,7 @@ import { Main } from './pages/Main'
 
 export function App() {
 	const { isDark } = useTheme()
+
 	return (
 		<>
 			<Header />
