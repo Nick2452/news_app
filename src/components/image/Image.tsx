@@ -8,10 +8,10 @@ export function Image({ image }: Props) {
 				<img
 					className='w-full h-full absolute top-0 left-0 object-cover'
 					src={image}
-					alt={image}
+					alt='Nema kartinok'
 				/>
 			) : (
-				'sad'
+				'Something went wrong'
 			)}
 		</div>
 	)
